@@ -17,9 +17,7 @@
 
     --primary-font:"Josefin Sans", sans-serif;
 }
-/* 
-body {
-} */
+
 
 .main-header {
     display: flex;
@@ -80,6 +78,19 @@ body {
     }
 }
 
+#section-2H,#section-3H{
+    margin: 3rem;
+    text-align: center;
+
+    h2{
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    p{
+        font-weight: 400;
+    }
+}
 
 .products-grid {
     margin: 3rem;
@@ -114,4 +125,167 @@ body {
 .products-grid img:nth-child(4) {
     grid-column: 3 / 4;
     grid-row: 2 / 3;  
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden; /* Oculta los productos que no están visibles */
+    margin-top: 3rem;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-track .product {
+    width: 33.33%; /* Muestra 3 productos por vista */
+    flex: 0 0 33.33%; /* Cada producto ocupa 1/3 del contenedor visible */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    padding: 0 10px; /* Espaciado entre productos */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.carousel-btn.left-btn {
+    left: 10px;
+}
+
+.carousel-btn.right-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo general para los productos */
+.product {
+    position: relative;
+    display: flex; /* Flex para centrar contenido en el hover */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.product-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    border-radius: 4px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.product-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.product-info button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-info button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.product:hover .product-info {
+    opacity: 1;
+}
+
+
+
+
+
+.slider {
+    width: 90%;
+    min-height: 410px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slider-buttons {
+    position: absolute;
+    cursor: pointer;
+    padding: 2px 12px;
+}
+
+.slider-buttons:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+.slider-button-left {
+    left: 0;
+}
+
+.slider-button-right {
+    right: 0;
+}
+
+.slider-img-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slider-item {
+    position: relative;
+    height: inherit;
+    visibility: hidden;
+    object-fit: cover;
+    opacity: 0;
+    max-width: 100%;
 }

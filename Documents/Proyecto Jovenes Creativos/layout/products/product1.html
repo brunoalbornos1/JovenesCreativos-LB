@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/resources/style.css">
+    <title>T-shirt Avenue</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+            <img src="/resources/img/logo/without-BG/4b.png" alt="Logo" />
+            </div>
+            <ul>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="/layout/contact.html">CONTACTO</a></li>
+                <li><a href="#contacto">NOSOTROS</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="/layout/login.html">INICIAR SESIÓN</a>/<a href="/layout/register.html">REGISTRARSE</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-fifths-desktop">
+                <div class="slider" id="slider">
+                    <div class="slider-img-container">
+                        <img src="/resources/img/products/item-1.png" alt="camiseta" class="active slider-item">
+                    </div>
+                    <div class="slider-img-container">
+                        <img src="/resources/img/products/item-2.png" alt="camiseta" class="slider-item">
+                    </div>
+                    <div class="slider-img-container">
+                        <img src="/resources/img/products/item-5.png" alt="camiseta" class="slider-item">
+                    </div>
+                    <div class="slider-button-left slider-buttons" onclick="previus()">
+                        <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+                    </div>
+                    <div class="slider-button-right slider-buttons" onclick="next()">
+                        <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="is-size-4">Classic Sweatshirt</h3>
+                <div class="course-rating-container">
+                    <div class="rating-stars" style="--rating: 86%">
+                    </div>
+                </div>
+                <p class=""> 3 comentarios | Compartir: <a class="icon-socials" href="#"><i
+                            class="zmdi zmdi-facebook"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-email"></i></a>
+                </p>
+                <h2 class="price is-size-4"><sup>$</sup>89.99</h2>
+                <p class="has-text-grey"> <strong>Disponibilidad:</strong> En stock</p>
+                <p class="has-text-grey"><strong>Código del procuto: </strong>#56843265</p>
+                
+                <form action="#" class="form-control">
+                    <div class="columns is-multiline">
+                        <div class="column is-one-third">
+                            <label for="color">Color</label>
+                            <select class="form-control-field" id="color">
+                                <option value="#">Negro</option>
+                                <option value="#">Azul</option>
+                                <option value="#">Rosado</option>
+                            </select>
+
+                        </div>
+                        <div class="column is-one-third">
+
+                            <label for="size">Tamaño</label>
+                            <select class="form-control-field" id="size">
+                                <option value="#">S</option>
+                                <option value="#">M</option>
+                                <option value="#">L</option>
+                            </select>
+                        </div>
+                        <div class="column is-one-third">
+                            <label for="quality">Cantidad</label>
+                            <input class="form-control-field" type="number">
+                        </div>
+                        <div class="column is-full is-marginless">
+                            <button class="btn btn-default btn-outline"><i class="zmdi zmdi-shopping-cart"></i>
+                                Agregar al carrito</button>
+                                
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="columns is-tablet">
+            <div class="column">
+                <div class="tabs-container">
+                    <ul class="tabs" id="tabs">
+                        <li class="tabs-item active-tab">Descripción</li>
+                    </ul>
+                    <div class="tabs-panels">
+                        <div class="tab-panel active-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <h2 class="is-size-4">Descripción</h2>
+                                        <p>Comodidad Sin Igual</p>
+                                        <p>La comodidad es nuestra prioridad número uno. Las remeras Blaze están diseñadas para abrazar tu cuerpo de forma natural, ofreciéndote la máxima libertad de movimiento. Ya sea que las uses para una reunión casual con amigos o para un evento especial, te sentirás fresco y cómodo durante todo el día.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column is-half">
+
+                                    
+                                        </div>
+                                    </div>
+                                    <div class="colulmn is-half">
+
+                                        <h2 class="is-size-4">Video</h2>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel">
+                            <h2 class="is-size-4">Tamaños</h2>
+                            <p></p>
+                        </div>
+                        <div class="tab-panel">
+                            <h2 class="is-size-4">Envios y reembolsos</h2>
+                            <p></p>
+                        </div>
+                        <div class="tab-panel">
+                            <h2 class="is-size-4">Comentarios</h2>
+                            <div class="container">
+                                <div class="columns is-multiline">
+                                    <div class="column is-full">
+                                        <div class="comment-container">
+                                            <img class="avatar" src="img/user-men.jpg" alt="">
+                                            <div class="comment">
+                                                <div class="course-rating-container">
+                                                    <div class="rating-stars" style="--rating: 100%">
+                                                    </div>
+                                                    <h3 class="is-size-5"></h3>
+                                                </div>
+                                                <p></p>
+                                                <span class="text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="comment-container">
+                                            <img class="avatar" src="img/user-men.jpg" alt="">
+                                            <div class="comment">
+                                                <div class="course-rating-container">
+                                                    <div class="rating-stars" style="--rating: 100%">
+                                                    </div>
+                                                    <h3 class="is-size-5"></h3>
+                                                </div>
+                                                <p></p>
+                                                <span class="text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+        
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
