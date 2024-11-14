@@ -12,10 +12,10 @@
     <header class="main-header">
         <nav class="main-nav">
             <div class="logo">
-            <a href="/layout/home.html"><img src="/resources/img/logo/without-BG/4b.png" alt="Logo"/></a>
+                <a href="/layout/home.html"><img src="/resources/img/logo/without-BG/4b.png" alt="Logo" /></a> 
             </div>
             <ul>
-                <li><a href="#shop">SHOP</a></li>
+                <li><a href="/layout/products/product1.html">SHOP</a></li>
                 <li><a href="/layout/contact.html">CONTACTO</a></li>
                 <li><a href="#contacto">NOSOTROS</a></li>
             </ul>
@@ -24,6 +24,57 @@
             <a href="/layout/login.html">INICIAR SESIÓN</a>/<a href="/layout/register.html">REGISTRARSE</a>
         </div>
     </header>
+
+    <main>
+        <section class="contact-header">
+            <h1>Contáctanos</h1>
+            <p>¿Tienes alguna pregunta o necesitas ayuda? Estamos aquí para ti. Llena el formulario o utiliza la información de contacto a continuación.</p>
+        </section>
+
+        <section class="contact-info">
+            <div class="info-container">
+                <div class="info-item">
+                    <h2>Dirección</h2>
+                    <p>Calle Principal 123, Ciudad, País</p>
+                </div>
+                <div class="info-item">
+                    <h2>Teléfono</h2>
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="info-item">
+                    <h2>Email</h2>
+                    <p><a href="mailto:info@tshirtavenue.com">info@tshirtavenue.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 T-Shirt Avenue. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>

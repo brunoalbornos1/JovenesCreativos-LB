@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/resources/style.css">
+    <title>T-shirt Avenue</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="/layout/home.html"><img src="/resources/img/logo/without-BG/4b.png" alt="Logo" /></a> 
+            </div>
+            <ul>
+                <li><a href="/layout/products/product1.html">SHOP</a></li>
+                <li><a href="/layout/contact.html">CONTACTO</a></li>
+                <li><a href="#contacto">NOSOTROS</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="/layout/login.html">INICIAR SESIÓN</a>/<a href="/layout/register.html">REGISTRARSE</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="content-grid">
+            <div class="product-gallery">
+                <div class="image-slider" id="slider">
+                    <div class="slider-image">
+                        <img src="/resources/img/products/item-6.png" alt="Camiseta" class="active">
+                    </div>
+                </div>
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">T-shirt Mali</h3>
+                <h2 class="price">$44.99</h2>
+                <p class="availability"><strong>Disponibilidad:</strong> En stock</p>
+                <p class="product-code"><strong>Código del producto:</strong> #56843265</p>
+
+                <form class="product-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="color">Color</label>
+                            <select id="color">
+                                <option>Negro</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="size">Tamaño</label>
+                            <select id="size">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="quantity">Cantidad</label>
+                            <input id="quantity" type="number">
+                        </div>
+                        <br>
+                        <div class="">
+                            <button class="add-to-cart-btn">
+                                Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                    <hr>
+                <br>
+                <div>
+                    <h2>Descripción</h2>
+                    <p>Empodera tu día con estilo. Esta camiseta con frase motivadora no solo es cómoda, sino que también agrega un toque único a tu outfit. Úsala con tus jeans favoritos y lleva contigo un mensaje positivo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section id="section-3H">
+        <h2>Tambien te puede gustar</h2>
+        <p>Descubre otras opciones casuales</p> 
+        
+        <div class="carousel">
+            <button class="carousel-btn left-btn">←</button>
+           
+            <div class="carousel-track">
+                <div class="product">
+                    <img src="/resources/img/products/item-1.png" alt="Item 1">
+                    <div class="product-info">
+                        <h3>T-shirt Avenue</h3>
+                        <p>$50</p>
+                        <a href="/layout/products/product1.html"><button>Ver producto</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/resources/img/products/item-2.png" alt="Item 2">
+                    <div class="product-info">
+                        <h3>Monroe</h3>
+                        <p>$75</p>
+                        <a href="/layout/products/product2.html"><button>Ver producto</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/resources/img/products/item-3.png" alt="Item 2">
+                    <div class="product-info">
+                        <h3>Avenueve</h3>
+                        <p>$90</p>
+                        <a href="/layout/products/product3.html"><button>Ver producto</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/resources/img/products/item-4.png" alt="Item 2">
+                    <div class="product-info">
+                        <h3>Ejeas</h3>
+                        <p>$60</p>
+                        <a href="/layout/products/product4.html"><button>Ver producto</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/resources/img/products/item-5.png" alt="Item 2">
+                    <div class="product-info">
+                        <h3>Mom</h3>
+                        <p>$30</p>
+                        <a href="/layout/products/product5.html"><button>Ver producto</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/resources/img/products/item-6.png" alt="Item 2">
+                    <div class="product-info">
+                        <h3>Saga</h3>
+                        <p>$50</p>
+                        <a href="/layout/products/product6.html"><button>Ver producto</button></a>
+                    </div>
+                </div>
+              
+            </div>
+            <button class="carousel-btn right-btn">→</button>
+        </div>
+    </section>      
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 T-shirt Avenue</p>
+        </div>
+    </footer>
+
+
+    <script src="/resources/app.js"></script>
+</body>
+
+</html>

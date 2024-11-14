@@ -289,3 +289,222 @@
     opacity: 0;
     max-width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product-gallery {
+    flex: 1 1 40%;
+    max-width: 400px;
+    position: relative;
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.slider-image img {
+    display: block;
+    width: 100%;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
+}
+
+/* Product Details */
+.product-details {
+    flex: 1 1 50%;
+    max-width: 500px;
+}
+
+.product-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+.form-control {
+    margin-top: 20px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control select,
+.form-control input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.form-control button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-control button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabs */
+.tabs-container {
+    margin-top: 30px;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background-color: #f9f9f9;
+}
+
+.tabs li.active-tab {
+    background-color: #fff;
+    color: #333;
+}
+
+.tab-panel {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.tab-panel.active-panel {
+    display: block;
+}
+
+/* Comments */
+.comment-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.comment-container .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-container .comment {
+    flex: 1;
+}
+
+.comment .rating-stars {
+    display: inline-block;
+    background: url('path-to-stars.png') no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 100px;
+}
+
+.comment h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.add-to-cart-btn {
+    background-color: #28a745; /* Verde atractivo */
+    color: #fff; /* Texto blanco */
+    font-size: 1rem; /* Tamaño de texto */
+    padding: 12px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Manito al pasar */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+    display: inline-flex; /* Para alinear icono y texto */
+    align-items: center; /* Centrar verticalmente */
+    gap: 8px; /* Espacio entre icono y texto */
+}
+
+.add-to-cart-btn i {
+    font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de agrandar */
+}
+
+.add-to-cart-btn:active {
+    background-color: #1e7e34; /* Verde aún más oscuro */
+    transform: scale(1); /* Sin agrandado */
+}
